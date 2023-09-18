@@ -5,7 +5,7 @@ MOCCal, or Multi-Omic CCS Calibrator, is a Python application for high-dimension
 For installation instructions, please see below.
 For usage tutorials, data templates, and example data, please see XXX.
 
-## Instructions for running MOOCal (UserDT)
+## Instructions for running MOCCal (UserDT)
 
 If you plan to use MOCCal with processed calibration data, you do not need to install Python or any of the packages required to run the code. To use this version of MOCCal, simply download the XXX zip file, extract all, and use the MOCCal executable file. The only requirement is that the MOCCal executable is in a location that also contains a folder titled “Output.”
 
