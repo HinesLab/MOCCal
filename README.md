@@ -3,7 +3,9 @@
 MOCCal, or Multi-Omic CCS Calibrator, is a Python application for high-dimensional, multi-omic traveling-wave ion mobility mass spectrometry (TWIM-MS) data anlaysis. Functionality includes collision cross section (CCS) calibration, experimental data biomolecular class assignment, and experimental class-specific CCS calculations. Notably, MOCCal offers class assignment and CCS calculations without need for identifying the features first. 
 
 For installation instructions, please see below.
-For python scripts, usage tutorials, data templates, and example data, please see the UserData or RawData folders.
+For python scripts, usage tutorials, data templates, and example data, please see the UserDT or RawDT folders.
+
+For the purposes of this software, the terms arrival time and drift time are used interchangeably, where arrival time is the total time it takes for an ion to travel through the mobility cell and all subsequent optics. 
 
 ## Instructions for running MOCCal (UserData)
 
