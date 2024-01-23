@@ -13,7 +13,7 @@ If you plan to use MOCCal with processed calibration data, you do not need to in
 
 ## Instructions for running MOCCal (RawDT)
 
-If you plan to use raw calibration files, you will need to install pnnl’s DEIMoS, version 1.3.2 (http://github.com/pnnl/deimos). After DEIMoS is set up, you can then run MOCCal_RawDT.py in the DEIMoS virtual environment. Data templates/examples are in the RawData folder. Raw data example files can be found in the RawDT_ExampleData zip file at [Raw_ExampleData](https://drive.google.com/drive/folders/1emXyk9YWUuBdkcCdkMoD0RCHJLZxQZcr?usp=sharing)
+If you plan to use raw calibration files, you will need to install pnnl’s DEIMoS, version 1.3.2 (http://github.com/pnnl/deimos). After DEIMoS is set up, you can then run MOCCal_RawDT.py in the DEIMoS virtual environment. Data templates/examples are in the RawData folder. Raw data example files can be found in the RawDT_ExampleData zip file at [RawDT_ExampleData](https://drive.google.com/drive/folders/1emXyk9YWUuBdkcCdkMoD0RCHJLZxQZcr?usp=sharing)
 
 ## Citing MOCCal
 
