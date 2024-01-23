@@ -9,7 +9,7 @@ For python scripts, usage tutorials, data templates, and example data, please se
 
 ## Instructions for running MOCCal (UserDT)
 
-If you plan to use MOCCal with processed calibration data, you do not need to install Python or any of the packages required to run the code. To use this version of MOCCal, simply download the MOCCal zip file ([MoCCalZip](https://drive.google.com/drive/folders/1emXyk9YWUuBdkcCdkMoD0RCHJLZxQZcr?usp=sharing)), extract all, and use the MOCCal executable file. The only requirement is that the MOCCal executable is in a location that also contains a folder titled “Output.” The python script from which the executable was built and a guide and data templates/examples are in the UserDT folder.
+If you plan to use MOCCal with processed calibration data, you do not need to install Python or any of the packages required to run the code. To use this version of MOCCal, simply download the MOCCal zip file ([MOCCalZip](https://drive.google.com/drive/folders/1emXyk9YWUuBdkcCdkMoD0RCHJLZxQZcr?usp=sharing)), extract all, and use the MOCCal executable file. The only requirement is that the MOCCal executable is in a location that also contains a folder titled “Output.” The python script from which the executable was built and a guide and data templates/examples are in the UserDT folder.
 
 ## Instructions for running MOCCal (RawDT)
 
