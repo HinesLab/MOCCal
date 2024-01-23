@@ -9,11 +9,11 @@ For python scripts, usage tutorials, data templates, and example data, please se
 
 ## Instructions for running MOCCal (UserDT)
 
-If you plan to use MOCCal with processed calibration data, you do not need to install Python or any of the packages required to run the code. To use this version of MOCCal, simply download the MOCCal zip file (https://outlookuga-my.sharepoint.com/:f:/g/personal/kmh84885_uga_edu/Evrw4fZFIRNAsAEXZu7DqrABvW48aiGqHaXCUUVFy3iD8g?e=BUxa4s), extract all, and use the MOCCal executable file. The only requirement is that the MOCCal executable is in a location that also contains a folder titled “Output.” The python script from which the executable was built and a guide and data templates/examples are in the UserDT folder.
+If you plan to use MOCCal with processed calibration data, you do not need to install Python or any of the packages required to run the code. To use this version of MOCCal, simply download the MOCCal zip file (link(https://drive.google.com/drive/folders/1emXyk9YWUuBdkcCdkMoD0RCHJLZxQZcr?usp=sharing, "MOCCalZIP")), extract all, and use the MOCCal executable file. The only requirement is that the MOCCal executable is in a location that also contains a folder titled “Output.” The python script from which the executable was built and a guide and data templates/examples are in the UserDT folder.
 
 ## Instructions for running MOCCal (RawDT)
 
-If you plan to use raw calibration files, you will need to install pnnl’s DEIMoS, version 1.3.2 (http://github.com/pnnl/deimos). After DEIMoS is set up, you can then run MOCCal_RawDT.py in the DEIMoS virtual environment. Data templates/examples are in the RawData folder. Raw data example files can be found in the RawDT_ExampleData zip file at Raw_ExampleData
+If you plan to use raw calibration files, you will need to install pnnl’s DEIMoS, version 1.3.2 (http://github.com/pnnl/deimos). After DEIMoS is set up, you can then run MOCCal_RawDT.py in the DEIMoS virtual environment. Data templates/examples are in the RawData folder. Raw data example files can be found in the RawDT_ExampleData zip file at link(https://drive.google.com/drive/folders/1emXyk9YWUuBdkcCdkMoD0RCHJLZxQZcr?usp=sharing, "Raw_ExampleData")
 
 ## Citing MOCCal
 
