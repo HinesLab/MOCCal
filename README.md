@@ -21,7 +21,7 @@ If you would like to reference MOCCal in an academic paper, we ask that you incl
 
 •	MOCCal https://github.com/HinesLab/MOCCal (accessed MM/YYYY)
 
-•	PUBLICATION CITATION
+•	Hynds, H.M.; Hines, K.M. MOCCal: A Multiomic CCS Calibrator for Traveling Wave Ion Mobility Mass Spectrometry. *Anal. Chem.* **2024**, *96(3)*, 1185-1194
 
 ## Getting Help
 
