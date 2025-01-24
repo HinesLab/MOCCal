@@ -1,3 +1,5 @@
+#MOCCal VERSION 2.0
+
 # MOCCal Script for Biomolecular Class Assignment and CCS Calibration
 
 from tkinter import *
@@ -9,6 +11,48 @@ import pandas as pd
 import numpy as np
 from scipy.optimize import curve_fit
 import math
+
+#Ionization Mode Selection GUI
+
+ws = Tk()
+ws.title('Ionization Mode Selection')
+ws.geometry('600x200') 
+ 
+positive_check = IntVar()
+negative_check = IntVar()
+ 
+positive_mode = 0
+negative_mode = 0
+ 
+def positive_Clicked():
+    global positive_mode
+    if positive_check.get() :
+        positive_mode = 1
+    else :
+        positive_mode = 0
+ 
+def negative_Clicked():
+    global negative_mode
+    if negative_check.get() :
+        negative_mode = 1
+    else :
+        negative_mode = 0
+        
+def nextPage():
+    ws.destroy()
+        
+Label(ws, text='Please Select Ionization Mode', foreground='green').place(relx=0.35, rely=0.2, anchor=W)
+ 
+positive_btn = Checkbutton(ws, text = 'Positive Ionization', variable = positive_check, onvalue = 1, offvalue = 0, height=2, width = 30, command = positive_Clicked)
+positive_btn.place(relx = 0.09, rely = 0.5, anchor= W)
+ 
+negative_btn = Checkbutton(ws, text = 'Negative Ionization', variable = negative_check, onvalue = 1, offvalue = 0, height=2, width = 30, command = negative_Clicked)
+negative_btn.place(relx = 0.5, rely = 0.5, anchor= W)
+
+
+next_btn = Button(ws, text ='Next', command = nextPage).place(relx = 0.5, rely = 0.85, anchor= S)
+
+ws.mainloop()
 
 #EDC GUI
 
@@ -410,16 +454,25 @@ if experimental_data_exists:
         
         if lipids_present == 1:
             lipid_cal_ccs_val = round((lipid_A * math.sqrt(1/reduced_mass) * (corrected_dt + lipid_t0)**lipid_B), 3)
-            lipid_line_CCS = ((ion_mass[i])**0.4788) * 11.837
+            if positive_mode == 1:
+                lipid_line_CCS = ((ion_mass[i])**0.4788) * 11.837
+            if negative_mode == 1:
+                lipid_line_CCS = ((ion_mass[i])**0.484) * 11.241
             lipid_dist = np.linalg.norm((lipid_cal_ccs_val - lipid_line_CCS))
         if metabolites_present == 1:
             metab_cal_ccs_val = round((metab_A * math.sqrt(1/reduced_mass) * (corrected_dt + metab_t0)**metab_B), 3)
-            metabolite_line_CCS = ((ion_mass[i])**0.3551) * 22.344
+            if positive_mode == 1:
+                metabolite_line_CCS = ((ion_mass[i])**0.3551) * 22.344
+            if negative_mode == 1:
+                metabolite_line_CCS = ((ion_mass[i])**0.3528) * 22.096
             metab_dist = np.linalg.norm((metab_cal_ccs_val - metabolite_line_CCS))
         if peptides_present == 1:
             if single_pep_A != 0:
                 single_pep_cal_ccs_val = round((single_pep_A * math.sqrt(1/reduced_mass) * (corrected_dt + single_pep_t0)**single_pep_B), 3)
-                single_peptide_line_ccs = ((ion_mass[i])**0.528) * 8.0136
+                if positive_mode == 1:
+                    single_peptide_line_ccs = ((ion_mass[i])**0.528) * 8.0136
+                if negative_mode == 1: 
+                    single_peptide_line_ccs = ((ion_mass[i])**0.4085) * 16.905
                 single_peptide_dist = np.linalg.norm((single_pep_cal_ccs_val - single_peptide_line_ccs))
             if double_pep_A != 0:
                 double_pep_cal_ccs_val = round(((double_pep_A * math.sqrt(1/reduced_mass) * (corrected_dt + double_pep_t0)**double_pep_B)*2), 3)
